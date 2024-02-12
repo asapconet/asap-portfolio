@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Fira Code, monospace */
+  @font-face {
+    font-family: Fira Code, monospace;
+    src: url("/fonts/FiraCode/FiraCode-Bold.ttf") format("woff");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: Fira Code, monospace;
+    src: url("/fonts/FiraCode/FiraCode-Light.ttf") format("woff");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: Fira Code, monospace;
+    src: url("/fonts/FiraCode/FiraCode-Medium.ttf") format("woff");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: Fira Code, monospace;
+    src: url("/fonts/FiraCode/FiraCode-Regular.ttf") format("woff");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: Fira Code, monospace;
+    src: url("/fonts/FiraCode/FiraCode-SemiBold.ttf") format("woff");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: Fira Code, monospace;
+    src: url("/fonts/FiraCode/FiraCode-Light.ttf") format("woff");
+    font-weight: 600;
+  }
+}

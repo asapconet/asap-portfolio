@@ -1,10 +1,9 @@
 const baseConfig = {
-  repo: "",
-  title: "",
-  description:
-    "",
-  url: "",
-}
+  repo: "https://github.com/asapconet/asap-portfolio.git",
+  title: "asap-portfolio",
+  description: "",
+  url: "asap.dev",
+};
 
 const siteConfig = {
   ...baseConfig,
