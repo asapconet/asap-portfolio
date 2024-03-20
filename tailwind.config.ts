@@ -1,6 +1,4 @@
-/**
- * @asapconet Design System - https://www.figma.com/file/XkTL6YWWU9shWiCDYM9H8l/Portfolio-(Community)?type=design&node-id=0-1&mode=design&t=Pp4d60kHVutPxaB9-0
- */
+//  @asapconet Design System - https://www.figma.com/file/XkTL6YWWU9shWiCDYM9H8l/Portfolio-(Community)?type=design&node-id=0-1&mode=design&t=Pp4d60kHVutPxaB9-0
 
 import type { Config } from "tailwindcss";
 
@@ -9,7 +7,9 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     extend: {
       borderRadius: {
@@ -48,9 +48,8 @@ const config: Config = {
       "2xl": "1536px",
     },
     fontFamily: {
-      firaCode: ["Fira Code", "monospace"],
-      display: "Fira Code",
-      body: ["Fira Code", "monospace"],
+      fira: ["Fira Code", "monospace"],
+      sans: ["Fira Code", "sans-serif"],
     },
     fontSize: {
       xxs: "10px",
@@ -62,9 +61,9 @@ const config: Config = {
       md2: "19px",
       lg: "20px",
       lg2a: "21px",
-      lg2: "23px",
+      lg2: "24px",
       xl: "28px",
-      "2xl": "33px",
+      "2xl": "32px",
       "2xl2": "34px",
       "3xl": "39px",
       "4xl": "48px",
@@ -76,13 +75,14 @@ const config: Config = {
     },
     colors: {
       transparent: "transparent",
-      bg: "#282C33",
+      background: "#282C33",
       black: "#000000",
       white: "#FFFFFF",
       pri: "#C778DD",
       sec: "#ABB2BF",
     },
   },
+  plugins: [],
 };
 
-export default config;
+module.exports = config
