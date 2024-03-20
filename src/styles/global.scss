@@ -1,0 +1,15 @@
+@import "./font.scss";
+@import "./utilities.scss";
+@import "./typography.scss";
+@import "./components/buttons.scss";
+@import "./components/tags.scss";
+@import "./components/input.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Fira Code", monospace;
+  padding: 5px 8px;
+  color: white;
+  background-color: theme("colors.background");
+}
