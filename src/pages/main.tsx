@@ -8,6 +8,7 @@ import Image from "next/image";
 import myCover from "@/assets/myCover.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ProjectCard } from "@/components/ProjectCard";
+import { projectData } from "@/app/data/projectData";
 
 export default function MainPage() {
   // useEffect(() => {
@@ -93,26 +94,21 @@ export default function MainPage() {
       max-w-[1024px] w-full pt-[4rem]"
       >
         <SectionHeader name="project" link="projects" linkName="View all" />
-        <div className="flex gap-4">
-          <ProjectCard
-            imagePrev="/this"
-            lang={["Ts", "JavaScript", "python", "SASS"]}
-            projectName="Project name"
-            desc="say a thing or two about the project"
-            projectLink="/"
-            linkName="GitHub"
-          />
-          <ProjectCard
-            imagePrev="/this"
-            lang={["Node.js", "python", "SASS"]}
-            projectName="Project name"
-            desc="say a thing or project"
-            projectLink="/"
-            linkName="Live"
-            projectLink1="/"
-            linkName1="GitHub"
-          />
+        <div className="flex flex-col md:flex-row gap-4 mb-32">
+          {projectData.map((el) => (
+            <ProjectCard
+              imagePrev={el.imagePrev}
+              lang={el.lang}
+              projectName={el.projectName}
+              desc={el.desc}
+              projectLink={el.projectLink}
+              linkName={el.linkName}
+              projectLink1={el.projectLink1}
+              linkName1={el.linkName1}
+            />
+          ))}
         </div>
+        <SectionHeader name="skills" />
       </section>
     </main>
   );
