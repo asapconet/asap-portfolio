@@ -6,6 +6,8 @@ import { MixedShapeLogo1 } from "@/assets/Icons/MixedShapeLogo";
 import { QuotationIcon } from "@/assets/Icons/Quotes";
 import Image from "next/image";
 import myCover from "@/assets/myCover.png";
+import { SectionHeader } from "@/components/SectionHeader";
+import { ProjectCard } from "@/components/ProjectCard";
 
 export default function MainPage() {
   // useEffect(() => {
@@ -85,6 +87,33 @@ export default function MainPage() {
           h-[91px] border-r-[0px] border-[1px] border-white"
         ></div>
       </div>
+
+      <section
+        className="flex flex-col items-start gap-4 
+      max-w-[1024px] w-full pt-[4rem]"
+      >
+        <SectionHeader name="project" link="projects" linkName="View all" />
+        <div className="flex gap-4">
+          <ProjectCard
+            imagePrev="/this"
+            lang={["Ts", "JavaScript", "python", "SASS"]}
+            projectName="Project name"
+            desc="say a thing or two about the project"
+            projectLink="/"
+            linkName="GitHub"
+          />
+          <ProjectCard
+            imagePrev="/this"
+            lang={["Node.js", "python", "SASS"]}
+            projectName="Project name"
+            desc="say a thing or project"
+            projectLink="/"
+            linkName="Live"
+            projectLink1="/"
+            linkName1="GitHub"
+          />
+        </div>
+      </section>
     </main>
   );
 }
