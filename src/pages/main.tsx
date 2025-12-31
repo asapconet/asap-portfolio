@@ -111,6 +111,8 @@ export default function MainPage() {
           ))}
         </div>
         <SectionHeader name="skills" />
+        <SectionHeader name="about-me" />
+        <SectionHeader name="contact" />
       </section>
     </main>
   );
