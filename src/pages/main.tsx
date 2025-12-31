@@ -9,6 +9,7 @@ import myCover from "@/assets/myCover.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projectData } from "@/app/data/projectData";
+import { TbDeviceIpadX } from "react-icons/tb";
 
 export default function MainPage() {
   // useEffect(() => {
@@ -30,7 +31,7 @@ export default function MainPage() {
     gap-5 "
     >
       <div
-        className="flex flex-col md:flex-row items-center gap-4 justify-between 
+        className="flex flex-col md:flex-row items-center gap-4 justify-between
       max-w-[1024px] w-full pt-[4rem] h-[423px] relative"
       >
         <div className=" flex flex-col justify-between gap-10 h-[227px] ">
@@ -64,10 +65,10 @@ export default function MainPage() {
           </p>
         </div>
       </div>
-      <div className="flex items-center">
+      <div className="hidden md:flex items-center">
         <div className=" flex flex-col mt-36 items-end relative">
           <div
-            className="flex text-center items-center w-[712px] h-[95px] 
+            className="flex text-center items-center w-[712px] h-[95px]
         pl-4 py-4 border-[1px] border-white relative"
           >
             <QuotationIcon className="absolute -top-4 left-4" />
@@ -77,7 +78,7 @@ export default function MainPage() {
             <QuotationIcon className="absolute -bottom-4 right-4" />
           </div>
           <div
-            className="flex right-0 text-center items-center w-[162px] h-[63px] 
+            className="flex right-0 text-center items-center w-[162px] h-[63px]
             pl-4 py-4 border-t-[0px] border-[1px]  border-white relative"
           >
             <p className="heading-2 flex items-center gap-2 ">-Dr. Me</p>
@@ -90,13 +91,14 @@ export default function MainPage() {
       </div>
 
       <section
-        className="flex flex-col items-start gap-4 
+        className="flex flex-col items-start gap-4
       max-w-[1024px] w-full pt-[4rem]"
       >
         <SectionHeader name="project" link="projects" linkName="View all" />
         <div className="flex flex-col md:flex-row gap-4 mb-32">
-          {projectData.map((el) => (
+          {projectData.map((el, idx) => (
             <ProjectCard
+              key={idx}
               imagePrev={el.imagePrev}
               lang={el.lang}
               projectName={el.projectName}

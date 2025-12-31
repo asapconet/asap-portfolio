@@ -4,12 +4,12 @@ import { useRouter } from "next/router";
 import React, { ReactEventHandler } from "react";
 
 interface IProps {
-  onClick?: ReactEventHandler;
   to?: string;
-  passHref?: boolean;
   anchor?: boolean;
-  children?: React.ReactNode;
+  passHref?: boolean;
   className?: string;
+  children?: React.ReactNode;
+  onClick?: ReactEventHandler;
 }
 
 const ApLink = React.forwardRef(

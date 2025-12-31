@@ -29,7 +29,10 @@ export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {
         {Array.isArray(lang) &&
           lang.map((el, idx) => {
             return (
-              <span key={idx} className="">
+              <span
+                key={idx}
+                className="whitespace-normal overflow-hidden break-words"
+              >
                 {el}
               </span>
             );
