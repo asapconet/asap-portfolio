@@ -1,9 +1,8 @@
-import { SectionHeader } from "@/components/SectionHeader";
-import { MdMail, MdMessage } from "react-icons/md";
-import { RiWhatsappFill } from "react-icons/ri";
+import { MdMail } from "react-icons/md";
+import { RiTwitterXLine } from "react-icons/ri";
 import ApLink from "./LInk";
 import { HeaderLogo } from "@/assets/Icons/HeaderLogo";
-import { FaMedium, FaTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaMedium, FaTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -24,25 +23,25 @@ export default function Footer() {
             <h3 className="heading-3 text-base sm:text-lg">Media</h3>
             <div className="flex gap-3 sm:gap-4">
               <ApLink
-                to="https://medium.com/@aaronrickymee"
+                to="https://medium.com/@asap_a1"
                 className="hover:text-pri transition-colors"
                 aria-label="Medium"
               >
                 <FaMedium size={24} className="sm:w-7 sm:h-7" />
+              </ApLink>{" "}
+              <ApLink
+                to="https://www.linkedin.com/in/aaron-sunday-the-buffer/"
+                className="hover:text-pri transition-colors"
+                aria-label="LInkedIn"
+              >
+                <FaLinkedin size={16} className="sm:w-7 sm:h-7" />
               </ApLink>
               <ApLink
-                to="https://twitter.com/aaronrickymee"
+                to="https://x.com/asapconet"
                 className="hover:text-pri transition-colors"
-                aria-label="Twitter"
+                aria-label="X app"
               >
-                <FaTwitter size={24} className="sm:w-7 sm:h-7" />
-              </ApLink>
-              <ApLink
-                to="https://discord.com/users/aaronrickymee"
-                className="hover:text-pri transition-colors"
-                aria-label="Discord"
-              >
-                <MdMessage size={24} className="sm:w-7 sm:h-7" />
+                <RiTwitterXLine size={24} className="sm:w-7 sm:h-7" />
               </ApLink>
             </div>
           </div>

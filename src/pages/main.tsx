@@ -28,7 +28,7 @@ export default function MainPage() {
   return (
     <div
       className="flex flex-col items-center justify-center min-h-[90vh]
-    gap-5  mx-auto px-4 sm:px-6 lg:px-8"
+    gap-5 mx-auto px-4 sm:px-6 lg:px-8"
     >
       <section
         className="
@@ -41,11 +41,11 @@ export default function MainPage() {
       >
         <div className="flex flex-col gap-6 max-w-[520px] sm:pt-10">
           <p className="heading-1-sm">
-            Aaron is a <span className="text-pri"> software engineer</span> and{" "}
-            <span className="text-pri"> full-stack web developer</span>
+            Aaron is a <span className="text-pri"> Software engineer</span> and
+            an aspiring<span className="text-pri"> Saleforce developer</span>
           </p>
           <p className="paragraph-1s text-sec">
-            He crafts responsive websites where technologies meet creativity
+            He crafts robust web applications where technologies meet creativity
           </p>
           <ApButton className="hidden sm:block" asLink="contacts">
             {" "}
@@ -73,8 +73,8 @@ export default function MainPage() {
         >
           <p className="paragraph-1 flex items-center gap-1 sm:gap-2 ">
             <span className="w-[16px] h-[16px] bg-pri"></span>
-            <span> Currently working on </span>
-            <span className="text-sec"> Portfolio</span>
+            <span> Currently building </span>
+            <span className="text-sec"> Rust APIs</span>
           </p>
         </div>
       </section>

@@ -9,7 +9,7 @@ export default function Navbar() {
         <div className="flex">
           <div className="flex items-center justify-between w-full min-h-20">
             <ApLink to="/" className="flex gap-2 items-center">
-              <HeaderLogo /> Asap
+              <HeaderLogo /> Aaron
             </ApLink>
 
             <ul className="hidden md:flex gap-4 items-center text-pri">

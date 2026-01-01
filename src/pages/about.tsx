@@ -4,7 +4,7 @@ import SkillsSection from "@/components/sections/SkillsSection";
 import Image from "next/image";
 import React from "react";
 
-const about = () => {
+const About = () => {
   return (
     <>
       {" "}
@@ -91,4 +91,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

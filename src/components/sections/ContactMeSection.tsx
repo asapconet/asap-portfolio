@@ -1,8 +1,8 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import { DotGrid } from "@/components/DotGrids";
 import { MdMail } from "react-icons/md";
-import { RiWhatsappFill } from "react-icons/ri";
 import ApLink from "../LInk";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function ContactMeSection() {
   return (
@@ -29,12 +29,12 @@ export default function ContactMeSection() {
           <h3 className="heading-3 mb-4 text-left">Message me here</h3>
           <div className="flex flex-col gap-3 text-sec">
             <div className="flex flex-row items-center gap-3">
-              <RiWhatsappFill size={24} className="flex-shrink-0 md:size-7" />
+              <FaLinkedin size={24} className="flex-shrink-0 md:size-7" />
               <ApLink
-                to="tel:+2348064669480"
+                to="https://www.linkedin.com/in/aaron-sunday-the-buffer/"
                 className="text-paragraph-1 hover:text-pri transition-colors break-all"
               >
-                (+234) 806-466-9480
+                Aaron Sunday
               </ApLink>
             </div>
 

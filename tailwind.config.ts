@@ -12,6 +12,14 @@ const config: Config = {
 
   theme: {
     extend: {
+      transitionDuration: {
+        fast: "150ms",
+        base: "220ms",
+        slow: "320ms",
+      },
+      transitionTimingFunction: {
+        smooth: "cubic-bezier(0.4, 0, 0.2, 1)",
+      },
       borderRadius: {
         4: "4px",
         5: "5px",

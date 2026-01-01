@@ -1,8 +1,9 @@
 import React from "react";
 import classNames from "classnames";
 import { FaGithub } from "react-icons/fa";
-import { FaMedium, FaTwitter } from "react-icons/fa6";
 import ApLink from "./LInk";
+import { BsMedium } from "react-icons/bs";
+import { RiTwitterXLine } from "react-icons/ri";
 
 interface IProps {
   className?: string;
@@ -19,16 +20,16 @@ export const SocialLinks = ({ className }: IProps) => {
           <FaGithub className="text-sec" size={26} />
         </ApLink>
         <ApLink
-          to="https://medium.com/aaron-sunday"
+          to="https://medium.com/@asap-a1"
           className="text-paragraph-1  transition-colors break-all"
         >
-          <FaMedium className="text-sec" size={24} />
+          <BsMedium className="text-sec" size={24} />
         </ApLink>
         <ApLink
           to="https://x.com/asapconet"
           className="text-paragraph-1  transition-colors break-all"
         >
-          <FaTwitter className="text-sec" size={26} />
+          <RiTwitterXLine className="text-sec" size={26} />
         </ApLink>
       </div>
     </div>
