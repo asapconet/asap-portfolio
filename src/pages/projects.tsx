@@ -17,7 +17,7 @@ export default function Projects() {
           dotClassName="bg-white/90"
         />
         <div className="">
-          <div className="heading-2 sm:heading-1-sm">
+          <div className="flex items-center heading-2 sm:heading-1-sm">
             <span className="text-pri">/</span>
             <h2 className="">projects</h2>
           </div>
