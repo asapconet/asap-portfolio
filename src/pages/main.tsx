@@ -9,6 +9,9 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { projectData } from "@/static/data/projectData";
 import { DotGrid } from "@/components/DotGrids";
 import SkillsSection from "@/components/SkillsSection";
+import AboutSection from "@/components/AboutSection";
+// import anime from "animejs";
+// import { useEffect } from "react";
 
 export default function MainPage() {
   // useEffect(() => {
@@ -143,19 +146,8 @@ export default function MainPage() {
       </section>
       <SkillsSection />
       {/* About section*/}
-      <section
-        className="flex flex-col items-start gap-4
-      max-w-[1024px] w-full pt-[4rem]"
-      >
-        <SectionHeader name="about-me" />
-        <div
-          className="
-            absolute left-0 mt-28
-            hidden md:block
-            w-12 md:w-[80px] h-24 md:h-[155px] border border-white border-l-0
-          "
-        />
-      </section>
+
+      <AboutSection />
       <section
         className="flex flex-col items-start gap-4
       max-w-[1024px] w-full pt-[4rem]"

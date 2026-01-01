@@ -17,7 +17,7 @@ export default function SkillsSection() {
               rows={5}
               width={105}
               height={105}
-              gap={4}
+              gap={-1}
               className="mt-12"
               dotClassName="bg-white/90"
             />
@@ -31,7 +31,7 @@ export default function SkillsSection() {
               rows={5}
               width={105}
               height={105}
-              gap={4}
+              gap={-1}
               className="flex justify-start"
               dotClassName="bg-white/90"
             />

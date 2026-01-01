@@ -52,7 +52,7 @@ const ApButton = ({
         onClick={handleClick}
         className={classNames(
           "flex items-center max-w-max justify-center border border-pri",
-          className
+          className,
         )}
       >
         {leftIcon && <span>{(leftIcon && icon[leftIcon]) || leftIcon}</span>}
