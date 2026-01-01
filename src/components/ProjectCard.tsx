@@ -20,7 +20,7 @@ export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {
       {rest.imagePrev && (
         <Image
           src={rest.imagePrev}
-          alt="project cover"
+          alt={`${rest.projectName} cover`}
           width={331}
           height={201}
         />

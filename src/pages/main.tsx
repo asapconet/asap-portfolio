@@ -9,7 +9,7 @@ import myCover from "@/assets/myCover.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projectData } from "@/app/data/projectData";
-import { TbDeviceIpadX } from "react-icons/tb";
+import { DotGrid } from "@/components/DotGrids";
 
 export default function MainPage() {
   // useEffect(() => {
@@ -30,42 +30,58 @@ export default function MainPage() {
       className="flex flex-col items-center justify-center min-h-[90vh]
     gap-5 "
     >
-      <div
-        className="flex flex-col md:flex-row items-center gap-4 justify-between
-      max-w-[1024px] w-full pt-[4rem] h-[423px] relative"
+      <section
+        className="
+          relative flex flex-col md:flex-row
+          items-center justify-between
+          gap-8
+          max-w-[1024px] w-full
+          pt-16 md:pt-20
+        "
       >
-        <div className=" flex flex-col justify-between gap-10 h-[227px] ">
-          <p className="heading-1">
-            Elias is a <span className="text-pri"> web designer</span> and{" "}
-            <span className="text-pri"> front-end developer</span>
+        <div className="flex flex-col gap-6 max-w-[520px] pt-10">
+          <p className="heading-1-sm">
+            Aaron is a <span className="text-pri"> software engineer</span> and{" "}
+            <span className="text-pri"> full-stack web developer</span>
           </p>
           <p className="paragraph-1s text-sec">
             He crafts responsive websites where technologies meet creativity
           </p>
           <ApButton asLink="contacts"> Contact Me !!</ApButton>
         </div>
-        <div className="max-w-[469px] h-[388px] w-full relative">
+        <div className="relative w-full max-w-[469px] aspect-[469/388]">
           <MixedShapeLogo1 className="pt-[4.8rem]" />
           <Image
-            className="absolute top-0 right-0"
-            alt="myCover"
+            className="absolute top-0 right-0 object-contain"
+            alt="mySelf in main pose"
             src={myCover}
-            width={460}
-            height={380}
+            fill
+            priority
           />
-          <div className="absolute right-4 bottom-12">
+          <div className="absolute right-4 bottom-12 hidden sm:block">
             <DotsIcon1 />
           </div>
         </div>
-        <div className="absolute flex items-center w-[402px] right-10 -bottom-[3.25rem] h-[37px] pl-4 py-4 border-[1px] border-white">
+        <div
+          className="
+            absolute
+            right-4 md:right-10
+            -bottom-14
+            w-[90%] sm:w-[402px]
+            h-auto
+            px-4 py-3
+            border border-white
+            backdrop-blur
+          "
+        >
           <p className="paragraph-1 flex items-center gap-2 ">
             <span className="w-[16px] h-[16px] bg-pri"></span>
             <span> Currently working on </span>
             <span className="text-sec"> Portfolio</span>
           </p>
         </div>
-      </div>
-      <div className="hidden md:flex items-center">
+      </section>
+      <div className="hidden lg:flex items-center">
         <div className=" flex flex-col mt-36 items-end relative">
           <div
             className="flex text-center items-center w-[712px] h-[95px]
@@ -85,15 +101,20 @@ export default function MainPage() {
           </div>
         </div>
         <div
-          className="absolute flex items-center w-[91px] mt-24 right-0
-          h-[91px] border-r-[0px] border-[1px] border-white"
-        ></div>
+          className="
+            absolute right-0 mt-24
+            w-12 sm:w-16 md:w-[91px]
+            h-12 sm:h-16 md:h-[91px]
+            border border-white border-r-0
+          "
+        />
       </div>
 
       <section
         className="flex flex-col items-start gap-4
       max-w-[1024px] w-full pt-[4rem]"
       >
+        <DotGrid className="absolute left-0 mt-12" dotClassName="bg-white/90" />
         <SectionHeader name="project" link="projects" linkName="View all" />
         <div className="flex flex-col md:flex-row gap-4 mb-32">
           {projectData.map((el, idx) => (
@@ -109,11 +130,26 @@ export default function MainPage() {
               linkName1={el.linkName1}
             />
           ))}
+          <div
+            className="
+              absolute right-0 mt-28
+              hidden md:block
+              w-12 md:w-[80px] h-24 md:h-[155px] border border-white border-r-0
+            "
+          />
         </div>
-        <SectionHeader name="skills" />
-        <SectionHeader name="about-me" />
-        <SectionHeader name="contact" />
       </section>
+      <section
+        className="
+          flex flex-col gap-8max-w-[1024px] w-full
+          pt-24
+        "
+      >
+        <SectionHeader name="skills" />
+        <div className="flex flex-col md:flex-row gap-4 mb-32"></div>
+      </section>
+      <SectionHeader name="about-me" />
+      <SectionHeader name="contact" />
     </main>
   );
 }

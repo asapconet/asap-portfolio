@@ -14,12 +14,12 @@ export default function Navbar() {
 
             <ul className="hidden md:flex gap-4 items-center text-pri">
               <li className="flex gap-4">
-                {navLinks.map((el) => (
-                  <div className="flex items-center gap-1">
+                {navLinks.map((el, index) => (
+                  <div key={index} className="flex items-center gap-1">
                     <span>#</span> <ApLink to={el.url}>{el.title}</ApLink>
-                   </div>
+                  </div>
                 ))}
-              </li> 
+              </li>
             </ul>
           </div>
         </div>
