@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 type DotGridProps = {
   rows?: number;
-  cols?: number;
+  cols: number;
   width?: number;
   height?: number;
   gap?: number;

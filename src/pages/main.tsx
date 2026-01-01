@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import anime from "animejs";
 import { DotsIcon1 } from "@/assets/Icons/Dots";
 import ApButton from "@/components/Button";
 import { MixedShapeLogo1 } from "@/assets/Icons/MixedShapeLogo";
@@ -8,8 +6,9 @@ import Image from "next/image";
 import myCover from "@/assets/myCover.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ProjectCard } from "@/components/ProjectCard";
-import { projectData } from "@/app/data/projectData";
+import { projectData } from "@/static/data/projectData";
 import { DotGrid } from "@/components/DotGrids";
+import SkillsSection from "@/components/SkillsSection";
 
 export default function MainPage() {
   // useEffect(() => {
@@ -109,12 +108,15 @@ export default function MainPage() {
           "
         />
       </div>
-
       <section
         className="flex flex-col items-start gap-4
       max-w-[1024px] w-full pt-[4rem]"
       >
-        <DotGrid className="absolute left-0 mt-12" dotClassName="bg-white/90" />
+        <DotGrid
+          cols={2}
+          className="absolute left-0 mt-12"
+          dotClassName="bg-white/90"
+        />
         <SectionHeader name="project" link="projects" linkName="View all" />
         <div className="flex flex-col md:flex-row gap-4 mb-32">
           {projectData.map((el, idx) => (
@@ -139,17 +141,27 @@ export default function MainPage() {
           />
         </div>
       </section>
+      <SkillsSection />
+      {/* About section*/}
       <section
-        className="
-          flex flex-col gap-8max-w-[1024px] w-full
-          pt-24
-        "
+        className="flex flex-col items-start gap-4
+      max-w-[1024px] w-full pt-[4rem]"
       >
-        <SectionHeader name="skills" />
-        <div className="flex flex-col md:flex-row gap-4 mb-32"></div>
+        <SectionHeader name="about-me" />
+        <div
+          className="
+            absolute left-0 mt-28
+            hidden md:block
+            w-12 md:w-[80px] h-24 md:h-[155px] border border-white border-l-0
+          "
+        />
       </section>
-      <SectionHeader name="about-me" />
-      <SectionHeader name="contact" />
+      <section
+        className="flex flex-col items-start gap-4
+      max-w-[1024px] w-full pt-[4rem]"
+      >
+        <SectionHeader name="contact" />
+      </section>
     </main>
   );
 }

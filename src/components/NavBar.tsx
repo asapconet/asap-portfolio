@@ -1,5 +1,5 @@
 import { HeaderLogo } from "@/assets/Icons/HeaderLogo";
-import { navLinks } from "./data/navLinks";
+import { navLinks } from "@/static/data/navLinks";
 import ApLink from "./LInk";
 
 export default function Navbar() {
