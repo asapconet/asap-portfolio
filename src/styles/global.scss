@@ -50,6 +50,15 @@ textarea {
         animation: none !important;
     }
 }
+.cursor {
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
 
 @layer utilities {
     .divider {
