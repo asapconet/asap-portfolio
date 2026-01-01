@@ -1,6 +1,6 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import { DotGrid } from "@/components/DotGrids";
-import { MdMail, MdMessage } from "react-icons/md";
+import { MdMail } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
 import ApLink from "../LInk";
 

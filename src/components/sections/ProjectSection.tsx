@@ -15,11 +15,8 @@ export default function ProjectSection() {
         dotClassName="bg-white/90"
       />
       <SectionHeader name="project" link="projects" linkName="View all" />
-      <div
-        className="flex flex-col md:flex-wrap md:flex-row md:justify-between
-        lg:justify-normal gap-4 mb-32"
-      >
-        {projectData.map((el, idx) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-32">
+        {projectData.slice(0, 3).map((el, idx) => (
           <ProjectCard
             key={idx}
             imagePrev={el.imagePrev}

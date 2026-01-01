@@ -9,14 +9,14 @@ export interface PProps {
   projectName: string;
   desc?: string;
   projectLink: string;
-  linkName: string;
+  linkName?: string;
   projectLink1?: string;
   linkName1?: string;
 }
 
 export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {
   return (
-    <div className="border border-sec border-1 w-full sm:w-[331px] h-fit mx-auto sm:mx-0">
+    <div className="border border-sec border-1 w-full sm:w-[331px] lg:w-[301px] h-fit mx-auto sm:mx-0">
       {rest.imagePrev && (
         <div className="w-full aspect-[331/201] relative overflow-hidden">
           <Image
@@ -42,7 +42,7 @@ export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {
       </div>
 
       <div className="p-4 sm:p-6">
-        <h2 className="heading-1 text-lg sm:text-xl md:text-2xl">
+        <h2 className="heading-2 text-lg sm:text-xl md:text-2xl">
           {rest.projectName}
         </h2>
         <p className="paragraph-1 text-sec py-3 sm:py-4 text-sm sm:text-base">
@@ -50,16 +50,18 @@ export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
-          <ApButton
-            asLink={rest.projectLink}
-            className="min-w-[101px] w-full sm:w-auto flex items-center justify-center
+          {rest.linkName && (
+            <ApButton
+              asLink={rest.projectLink}
+              className="min-w-[101px] w-full sm:w-auto flex items-center justify-center
             gap-2 h-[37px] sm:h-[40px] px-3 sm:px-4 py-2 text-sm sm:text-base"
-          >
-            <span>{rest.linkName}</span>
-            <span>~&gt;</span>
-          </ApButton>
+            >
+              <span>{rest.linkName}</span>
+              <span>~&gt;</span>
+            </ApButton>
+          )}
 
-          {rest.projectLink1 !== undefined && (
+          {rest.projectLink1 && (
             <ApButton
               asLink={rest.projectLink1}
               className="min-w-[101px] w-full sm:w-auto h-[37px] sm:h-[40px] px-4 py-2 text-sm sm:text-base"
