@@ -72,8 +72,8 @@ export default function AboutSection() {
         cols={4}
         width={120}
         height={120}
-        gap={-1}
-        className="absolute right-0 bottom-24 !sm:hidden"
+        gap={1}
+        className="absolute right-0 mt-72 !sm:hidden"
         dotClassName="bg-white/90"
       />
     </section>

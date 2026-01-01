@@ -10,6 +10,7 @@ import { projectData } from "@/static/data/projectData";
 import { DotGrid } from "@/components/DotGrids";
 import SkillsSection from "@/components/SkillsSection";
 import AboutSection from "@/components/AboutSection";
+import ContactMeSection from "@/components/ContactMeSection";
 // import anime from "animejs";
 // import { useEffect } from "react";
 
@@ -148,12 +149,7 @@ export default function MainPage() {
       {/* About section*/}
 
       <AboutSection />
-      <section
-        className="flex flex-col items-start gap-4
-      max-w-[1024px] w-full pt-[4rem]"
-      >
-        <SectionHeader name="contact" />
-      </section>
+      <ContactMeSection />
     </main>
   );
 }
