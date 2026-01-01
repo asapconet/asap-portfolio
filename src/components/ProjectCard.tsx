@@ -16,7 +16,7 @@ export interface PProps {
 
 export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {
   return (
-    <div className="border border-sec border-1 w-[311px] sm:w-[331px] h-fit mx-auto sm:mx-0">
+    <div className="border border-sec border-1 w-full sm:w-[331px] h-fit mx-auto sm:mx-0">
       {rest.imagePrev && (
         <div className="w-full aspect-[331/201] relative overflow-hidden">
           <Image

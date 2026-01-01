@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="flex flex-col gap-4 max-w-[1024px] w-full pt-[4rem] min-h-[504px] px-4 md:px-0">
+    <section className="flex flex-col gap-4 max-w-[1024px] w-full lg:pt-[3rem] min-h-[504px]">
       <div
         className="
           absolute -left-6 mt-28

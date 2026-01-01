@@ -6,7 +6,7 @@ import { skillsData } from "@/static/data/skills";
 
 export default function SkillsSection() {
   return (
-    <section className="flex flex-col items-start gap-4 max-w-[1024px] w-full pt-[4rem] px-4 md:px-0">
+    <section className="flex flex-col items-start gap-4 max-w-[1024px] w-full lg:pt-[4rem]">
       <SectionHeader name="skills" />
 
       <div className="flex flex-col lg:flex-row gap-6 w-full mb-32">
