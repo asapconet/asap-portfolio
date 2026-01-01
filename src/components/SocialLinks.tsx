@@ -8,13 +8,12 @@ interface IProps {
 }
 export const SocialLinks = ({ className }: IProps) => {
   return (
-    <div className={classNames("absolute top-0 left-8", className)}>
+    <div className={classNames("absolute top-0 left-2", className)}>
       <div className="flex flex-col items-center gap-4">
-        <span className="h-[271px] w-[2px] bg-sec"></span>
-        <FaGithub className="text-sec" size={26}/>
-        <FaMedium className="text-sec" size={24}/>
-        <FaTwitter className="text-sec" size={26}/>
-
+        <span className="h-[211px] w-[2px] bg-sec"></span>
+        <FaGithub className="text-sec" size={26} />
+        <FaMedium className="text-sec" size={24} />
+        <FaTwitter className="text-sec" size={26} />
       </div>
     </div>
   );

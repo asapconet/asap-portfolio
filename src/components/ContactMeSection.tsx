@@ -12,12 +12,11 @@ export default function ContactMeSection() {
         width={120}
         height={120}
         gap={-1}
-        className="absolute -left-4 !sm:hidden mt-20"
+        className="absolute -left-6 mt-20 hidden xl:grid"
         dotClassName="bg-white/90"
       />
 
       <SectionHeader name="contact" />
-
       <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-8 lg:gap-12 w-full">
         <div className="flex flex-col gap-4 md:w-[50%] lg:w-[515px] text-sec">
           <p className="paragraph-1-s !leading-7">

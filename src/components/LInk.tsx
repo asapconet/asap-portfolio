@@ -15,7 +15,7 @@ interface IProps {
 const ApLink = React.forwardRef(
   (
     { to = "#", passHref = false, children, className, ...rest }: IProps,
-    ref: any
+    ref: any,
   ) => {
     const { pathname } = useRouter();
     const isActive = to.includes(pathname);
@@ -26,18 +26,18 @@ const ApLink = React.forwardRef(
         <div
           ref={ref}
           className={classNames(
-            "hover:text-sec relative group w-fit transition duration-200 text-white",
+            "hover:text-sec relative group w-max sm:w-fit transition duration-200 text-white",
             className,
             {
               "text-pri": isActive,
-            }
+            },
           )}
         >
           {children}
         </div>
       </Link>
     );
-  }
+  },
 );
 
 ApLink.displayName = "ApLink";

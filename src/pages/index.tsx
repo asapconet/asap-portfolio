@@ -4,10 +4,12 @@ import { SocialLinks } from "@/components/SocialLinks";
 
 export default function Home() {
   return (
-    <main className="fle flex-col items-center justify-center bg-background relative">
-      <SocialLinks />
-      <Navbar/>
-      <MainPage />
+    <main className="bg-background flex flex-col items-center justify-center w-full min-h-screen">
+      <div className="relative max-w-[1440px] w-full">
+        <SocialLinks className="hidden xl:block" />
+        <Navbar />
+        <MainPage />
+      </div>
     </main>
   );
 }

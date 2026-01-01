@@ -39,7 +39,7 @@ export default function SkillsSection() {
           </div>
         </div>
 
-        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-4">
           {skillsData.slice(0, 3).map((skill, idx) => (
             <SkillCard
               key={idx}

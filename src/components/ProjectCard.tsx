@@ -16,42 +16,53 @@ export interface PProps {
 
 export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {
   return (
-    <div className="border border-sec border-1 w-[331px] h-fit">
+    <div className="border border-sec border-1 w-[311px] sm:w-[331px] h-fit mx-auto sm:mx-0">
       {rest.imagePrev && (
-        <Image
-          src={rest.imagePrev}
-          alt={`${rest.projectName} cover`}
-          width={331}
-          height={201}
-        />
+        <div className="w-full aspect-[331/201] relative overflow-hidden">
+          <Image
+            src={rest.imagePrev}
+            alt={`${rest.projectName} cover`}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 331px"
+          />
+        </div>
       )}
-      <div className=" flex gap-2 border-y border-sec border-1 p-2 paragraph-1 text-sec">
+
+      <div className="flex flex-wrap gap-2 border-y border-sec border-1 p-2 paragraph-1 text-sec min-h-[44px]">
         {Array.isArray(lang) &&
-          lang.map((el, idx) => {
-            return (
-              <span
-                key={idx}
-                className="whitespace-normal overflow-hidden break-words"
-              >
-                {el}
-              </span>
-            );
-          })}
+          lang.map((el, idx) => (
+            <span
+              key={idx}
+              className="whitespace-normal overflow-hidden break-words"
+            >
+              {el}
+            </span>
+          ))}
       </div>
-      <div className="p-4">
-        <h2 className="heading-1">{rest.projectName}</h2>
-        <p className="paragraph-1 text-sec py-4">{rest.desc}</p>
-        <div className="flex gap-6">
+
+      <div className="p-4 sm:p-6">
+        <h2 className="heading-1 text-lg sm:text-xl md:text-2xl">
+          {rest.projectName}
+        </h2>
+        <p className="paragraph-1 text-sec py-3 sm:py-4 text-sm sm:text-base">
+          {rest.desc}
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
           <ApButton
             asLink={rest.projectLink}
-            className="min-w-[101px] w-full flex items-center gap-2 h-[37px] px-2 py-2"
+            className="min-w-[101px] w-full sm:w-auto flex items-center justify-center
+            gap-2 h-[37px] sm:h-[40px] px-3 sm:px-4 py-2 text-sm sm:text-base"
           >
-            <span>{rest.linkName}</span> <span> ~&gt;</span>
+            <span>{rest.linkName}</span>
+            <span>~&gt;</span>
           </ApButton>
+
           {rest.projectLink1 !== undefined && (
             <ApButton
               asLink={rest.projectLink1}
-              className="min-w-[101px] h-[37px] px-4 py-2"
+              className="min-w-[101px] w-full sm:w-auto h-[37px] sm:h-[40px] px-4 py-2 text-sm sm:text-base"
             >
               {rest.linkName1}
             </ApButton>
