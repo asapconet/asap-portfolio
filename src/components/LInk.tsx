@@ -26,7 +26,7 @@ const ApLink = React.forwardRef(
         <div
           ref={ref}
           className={classNames(
-            "hover:text-sec relative group w-max sm:w-fit transition duration-200 text-white",
+            "hover:text-pri relative group w-max sm:w-fit transition duration-200 text-white",
             className,
             {
               "text-pri": isActive,

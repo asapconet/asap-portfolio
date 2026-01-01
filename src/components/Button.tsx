@@ -51,17 +51,20 @@ const ApButton = ({
         {...rest}
         onClick={handleClick}
         className={classNames(
-          "flex items-center max-w-max justify-center border border-pri",
+          "flex items-center max-w-max justify-center border border-pri hover:border-white",
           className,
         )}
       >
         {leftIcon && <span>{(leftIcon && icon[leftIcon]) || leftIcon}</span>}
 
         <span
-          className={classNames("block text-white py-[.55rem] px-3", {
-            "ml-1": leftIcon,
-            "mr-0": rightIcon,
-          })}
+          className={classNames(
+            "block text-white hover:text-pri py-[.55rem] px-3",
+            {
+              "ml-1": leftIcon,
+              "mr-0": rightIcon,
+            },
+          )}
         >
           {children}
         </span>
@@ -72,7 +75,7 @@ const ApButton = ({
           </span>
         )}
       </button>
-      {asLink && <ApLink ref={linkRef} to={asLink} className="!m-0 sr-only" />}
+      {asLink && <ApLink ref={linkRef} to={asLink} className="!m-0 sr-only " />}
     </>
   );
 };

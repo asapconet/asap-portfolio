@@ -2,7 +2,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { DotGrid } from "@/components/DotGrids";
 import { MdMail, MdMessage } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
-import ApLink from "./LInk";
+import ApLink from "../LInk";
 
 export default function ContactMeSection() {
   return (

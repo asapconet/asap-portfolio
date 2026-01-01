@@ -1,6 +1,7 @@
 import Navbar from "@/components/NavBar";
 import MainPage from "./main";
 import { SocialLinks } from "@/components/SocialLinks";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <SocialLinks className="hidden xl:block" />
         <Navbar />
         <MainPage />
+        <Footer />
       </div>
     </main>
   );

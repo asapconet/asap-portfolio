@@ -1,6 +1,6 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import { DotGrid } from "@/components/DotGrids";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard } from "../ProjectCard";
 import { projectData } from "@/static/data/projectData";
 
 export default function ProjectSection() {

@@ -3,11 +3,11 @@ import ApButton from "@/components/Button";
 import { MixedShapeLogo1 } from "@/assets/Icons/MixedShapeLogo";
 import Image from "next/image";
 import myCover from "@/assets/myCover.png";
-import SkillsSection from "@/components/SkillsSection";
-import AboutSection from "@/components/AboutSection";
-import ContactMeSection from "@/components/ContactMeSection";
-import ProjectSection from "@/components/ProjectSection";
-import QuoteArea from "@/components/QuoteArea";
+import SkillsSection from "@/components/sections/SkillsSection";
+import AboutSection from "@/components/sections/AboutSection";
+import ContactMeSection from "@/components/sections/ContactMeSection";
+import ProjectSection from "@/components/sections/ProjectSection";
+import QuoteArea from "@/components/sections/QuoteArea";
 // import anime from "animejs";
 // import { useEffect } from "react";
 
