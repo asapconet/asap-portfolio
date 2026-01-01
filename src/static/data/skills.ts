@@ -3,22 +3,55 @@ import { SProps } from "@/components/SkillCard";
 export const skillsData: SProps[] = [
   {
     skillType: "Languages",
-    skillSets: ["TypeScript Lua", "Python JavaScript"],
+    skillSets: ["Rust", "TypeScript", "JavaScript", "Apex", "HTML", "CSS"],
+  },
+
+  ,
+  {
+    skillType: "Frameworks",
+    skillSets: [
+      "React",
+      "Shopify Polaris",
+      "Axum",
+      "Next.js",
+      "LWC",
+      "Recoil",
+      "RTK",
+      "Zustand",
+      "Apollo GraphQL",
+      "SCSS",
+      "Chakra UI",
+      "Material UI",
+      "Headless UI",
+      "TailwindCSS",
+      "Hardhat",
+      "Remix",
+    ],
   },
   {
     skillType: "Databases",
-    skillSets: ["SQLite PostgreSQL", "Mongo"],
+    skillSets: ["SOQL", "PostgreSQL", "Mongo"],
   },
   {
     skillType: "Tools",
-    skillSets: ["VSCode Neovim Linux", "Figma XFCE Arch", "Git Font Awesome"],
+    skillSets: [
+      "VSCode Linux",
+      "Slack",
+      "Git",
+      "Zed",
+      "Jira",
+      "Trello",
+      "Figma",
+    ],
   },
   {
     skillType: "Other",
-    skillSets: ["HTML CSS EJS SCSS", "REST Jinja"],
-  },
-  {
-    skillType: "Frameworks",
-    skillSets: ["React Vue", "Disnake Discord.js", "Flask Express.js"],
+    skillSets: [
+      "Technical Writing",
+      "Linux CLI",
+      "Git/GitHub",
+      "Responsive Web Design",
+      "PWAs",
+    ],
   },
 ];
