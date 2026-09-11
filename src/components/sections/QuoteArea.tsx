@@ -24,7 +24,7 @@ export default function QuoteArea() {
           px-3 sm:px-4 py-3 sm:py-4
           border-t-0 border border-white relative"
         >
-          <p className="heading-3 md:heading-2">-Dr. I</p>
+          <p className="heading-3 md:heading-2">-Engr. I</p>
         </div>
       </div>
 

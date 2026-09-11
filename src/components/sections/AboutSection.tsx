@@ -14,24 +14,26 @@ export default function AboutSection() {
       <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-12 w-full">
         <article className="flex flex-col gap-6 lg:w-[515px] mt-4 text-sec">
           <TypingText typingSpeed={60} cursor={false} className="paragraph-1">
-            Hello I&aposmm Aaron
+            Hello I&apos;m Aaron
           </TypingText>
 
           <div className="paragraph-1-s !leading-7 space-y-6">
             <TypingText typingSpeed={20} startDelay={300}>
-              I&aposm a software engineer with a passion for building innovative
-              and user-friendly applications. I have experience working with a
-              variety of technologies, including React, Node.js, and Python.
-              I&aposmm always looking for new challenges and opportunities to
-              learn and grow.
+              I&apos;m a frontend-focused software engineer based in Abuja,
+              Nigeria, with 5+ years of experience shipping production web
+              applications in TypeScript, React, and Next.js. I care about clean
+              component architecture, reliable state management, and interfaces
+              that are actually pleasant to use.
             </TypingText>
             <br />
             <br />
             <TypingText typingSpeed={60} cursor={false}>
-              I&aposm currently working on a project that involves building a
-              web application using React and Node.js. I&aposm excited to see
-              where this project will take me and what new skills I&aposll learn
-              along the way.
+              Over the years I&apos;ve led frontend work on platforms like
+              Pillar (hospital staff management) and built Shopify-embedded
+              apps, survey tools, and business dashboards for teams across the
+              UK, Netherlands, Canada, and Nigeria. I&apos;ve also picked up
+              PHP/WordPress along the way and I&apos;m expanding into backend
+              development with Rust and Axum.
             </TypingText>
           </div>
 

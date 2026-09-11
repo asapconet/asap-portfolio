@@ -3,10 +3,16 @@ import { SProps } from "@/components/SkillCard";
 export const skillsData: SProps[] = [
   {
     skillType: "Languages",
-    skillSets: ["Rust", "TypeScript", "JavaScript", "Apex", "HTML", "CSS"],
+    skillSets: [
+      "Rust",
+      "TypeScript",
+      "JavaScript",
+      "PHP",
+      "Apex",
+      "HTML",
+      "CSS",
+    ],
   },
-
-  ,
   {
     skillType: "Frameworks",
     skillSets: [
@@ -26,11 +32,12 @@ export const skillsData: SProps[] = [
       "TailwindCSS",
       "Hardhat",
       "Remix",
+      "WordPress",
     ],
   },
   {
     skillType: "Databases",
-    skillSets: ["SOQL", "PostgreSQL", "Mongo"],
+    skillSets: ["SOQL", "PostgreSQL", "Supabase"],
   },
   {
     skillType: "Tools",
@@ -42,6 +49,7 @@ export const skillsData: SProps[] = [
       "Jira",
       "Trello",
       "Figma",
+      "Docker",
     ],
   },
   {
@@ -52,6 +60,8 @@ export const skillsData: SProps[] = [
       "Git/GitHub",
       "Responsive Web Design",
       "PWAs",
+      "REST APIs",
+      "CI/CD",
     ],
   },
 ];

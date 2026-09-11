@@ -8,10 +8,10 @@ export interface PProps {
   lang: string[];
   projectName: string;
   desc?: string;
-  projectLink: string;
+  projectLink: string | undefined;
   linkName?: string;
-  projectLink1?: string;
-  linkName1?: string;
+  projectLink1?: string | undefined;
+  linkName1?: string | undefined;
 }
 
 export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {

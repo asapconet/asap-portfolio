@@ -20,8 +20,9 @@ export default function ContactMeSection() {
       <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-8 lg:gap-12 w-full">
         <div className="flex flex-col gap-4 md:w-[50%] lg:w-[515px] text-sec">
           <p className="paragraph-1-s !leading-7">
-            I&apos;m interested in freelance opportunities. However, if you have
-            other request or question, don&apos;t hesitate to contact me
+            I&apos;m interested in full time, freelance and or part time
+            opportunities. However, if you have other request or question,
+            don&apos;t hesitate to contact me
           </p>
         </div>
 

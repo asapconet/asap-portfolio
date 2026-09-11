@@ -37,20 +37,22 @@ const About = () => {
         <article className="flex flex-col gap-4 lg:w-[515px] mt-4 text-sec">
           <p className="paragraph-1">Hello I&apos;m Aaron</p>
           <p className="paragraph-1-s !leading-7 ">
-            I&apos;m a software engineer with a passion for building innovative
-            and user-friendly applications. I have experience working with a
-            variety of technologies, including React, Node.js, and Python.
-            I&apos;m always looking for new challenges and opportunities to
-            learn and grow. <br /> <br />
-            I&apos;m currently working on a project that involves building a web
-            application using React and Node.js. I&apos;m excited to see where
-            this project will take me and what new skills I&apos;ll learn along
-            the way.
+            I&apos;m a frontend-focused software engineer based in Abuja,
+            Nigeria, with 5+ years of experience shipping production web
+            applications in TypeScript, React, and Next.js. I care about clean
+            component architecture, reliable state management, and interfaces
+            that are actually pleasant to use. <br /> <br />
+            Over the years I&apos;ve led frontend work on platforms like Pillar
+            (hospital staff management) and built Shopify-embedded apps, survey
+            tools, and business dashboards for teams across the UK, Netherlands,
+            Canada, and Nigeria. I&apos;ve also picked up PHP/WordPress along
+            the way and I&apos;m expanding into backend development with Rust
+            and Axum.
             <br />
             <br />
-            I&apos;m also interested in exploring new technologies and
-            frameworks, and I&apos;m always looking for ways to improve my
-            skills and stay up-to-date with the latest industry trends.
+            Right now I&apos;m building Check-et, a goal-tracking app with a
+            React Native/Expo client and a Rust/Axum backend — it&apos;s where
+            most of my backend learning is happening these days.
           </p>
         </article>
 
