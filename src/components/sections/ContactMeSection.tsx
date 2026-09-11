@@ -1,8 +1,9 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import { DotGrid } from "@/components/DotGrids";
-import { MdMail } from "react-icons/md";
+import { MdMail, MdDownload } from "react-icons/md";
 import ApLink from "../LInk";
 import { FaLinkedin } from "react-icons/fa";
+import ApButton from "../Button";
 
 export default function ContactMeSection() {
   return (
@@ -24,6 +25,14 @@ export default function ContactMeSection() {
             opportunities. However, if you have other request or question,
             don&apos;t hesitate to contact me
           </p>
+
+          <ApButton
+            asLink="/resume/Aaron-Sunday-Resume.pdf"
+            leftIcon={<MdDownload size={18} className="text-white ml-2" />}
+            className="w-fit"
+          >
+            Download Resume
+          </ApButton>
         </div>
 
         <div className="border border-white p-4 md:p-6 h-fit md:w-[45%] lg:w-auto">

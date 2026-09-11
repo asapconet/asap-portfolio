@@ -51,17 +51,19 @@ export default function MainHero() {
 
   return (
     <section className="relative flex flex-col md:flex-row items-center justify-between gap-8 max-w-[1024px] w-full pt-16 md:pt-20">
-      {/* ... text content ... */}
       <div className="flex flex-col gap-6 max-w-[520px] sm:pt-10">
         <p className="heading-1-sm">
-          Aaron is a <span className="text-pri">Software engineer</span> and a
-          <span className="text-pri"> Technical writer</span>
+          Aaron is a <span className="text-pri">Software Engineer</span> and a
+          <span className="text-pri"> Technical Writer</span>
         </p>
+
         <p className="paragraph-1s text-sec">
-          He crafts robust web applications where technologies meet creativity
+          He builds production software and is expanding across the stack, from
+          modern web applications to backend APIs, and Bitcoin with Rust
         </p>
+
         <ApButton className="hidden sm:block" asLink="contact">
-          Contact Me !!
+          Contact Me!!
         </ApButton>
       </div>
 
@@ -87,9 +89,9 @@ export default function MainHero() {
       </div>
 
       {/* Badge */}
-      <div className="absolute right-4 md:right-10 -bottom-14 w-[90%] sm:w-[402px] h-auto px-4 py-3 border border-white backdrop-blur">
-        <p className="paragraph-1 flex items-center gap-1 sm:gap-2">
-          <span className="w-[16px] h-[16px] bg-pri"></span>
+      <div className="absolute right-0 -bottom-14 w-full sm:w-[412px] h-auto px-4 py-3 border border-white backdrop-blur">
+        <p className="paragraph-4 sm:paragraph-1 flex items-center gap-1 sm:gap-2">
+          <span className="min-w-[16px] h-[16px] bg-pri"></span>
           <span className="flex items-center gap-1 sm:gap-2">
             <TypingText typingSpeed={60} cursor={false} startDelay={800}>
               Currently building
@@ -101,7 +103,7 @@ export default function MainHero() {
               startDelay={800}
               className="text-sec"
             >
-              Rust APIs
+              Bitcoin with Rust
             </TypingText>
           </span>
         </p>

@@ -35,7 +35,7 @@ const config: Config = {
         "screen-3xl": "1650px",
       },
       height: {
-        "90vh": "90vh",
+        9: "90vh",
       },
     },
     container: {

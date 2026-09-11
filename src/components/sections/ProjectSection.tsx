@@ -19,7 +19,7 @@ export default function ProjectSection() {
         {projectData.slice(0, 3).map((el, idx) => (
           <ProjectCard
             key={idx}
-            imagePrev={el.imagePrev}
+            // imagePrev={el.imagePrev}
             lang={el.lang}
             projectName={el.projectName}
             desc={el.desc}

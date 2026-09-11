@@ -2,11 +2,10 @@ import { QuotationIcon } from "@/assets/Icons/Quotes";
 
 export default function QuoteArea() {
   return (
-    <div className="flex items-center justify-center w-full mt-20 sm:mt-28 md:mt-36">
+    <div className="flex items-center justify-end w-full mt-20 sm:mt-28 md:mt-36">
       <div className="flex flex-col items-end relative w-full max-w-[712px]">
         <div
           className="flex text-center items-center w-full
-
           border border-white relative
           min-h-[80px] sm:min-h-[95px]"
         >
@@ -30,7 +29,7 @@ export default function QuoteArea() {
 
       <div
         className="
-          hidden xl:block absolute right-0 mt-24
+          hidden xl:block absolute -right-6 mt-24
           w-12 lg:w-16 xl:w-[91px]
           h-12 lg:h-16 xl:h-[91px]
           border border-white border-r-0
