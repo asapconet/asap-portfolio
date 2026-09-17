@@ -14,7 +14,7 @@ export default function GlitchText({
   const [display, setDisplay] = useState(text);
 
   function scramble() {
-    let iteration = 0;
+    let iteration = 1;
     const original = text;
     const interval = setInterval(() => {
       setDisplay(
@@ -34,7 +34,7 @@ export default function GlitchText({
         setDisplay(original);
         clearInterval(interval);
       }
-    }, 30);
+    }, 60);
   }
 
   return (

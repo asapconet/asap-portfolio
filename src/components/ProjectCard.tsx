@@ -25,7 +25,7 @@ export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {
     <motion.div
       whileHover={{ y: -6, rotate: -0.4 }}
       transition={{ type: "spring", stiffness: 260, damping: 20 }}
-      className="group relative border border-sec border-1 w-full sm:w-[331px] lg:w-[301px] h-fit mx-auto sm:mx-0 overflow-hidden"
+      className="group relative border border-sec border-1 w-full sm:w-[331px]  lg:w-fit h-fit mx-auto sm:mx-0 overflow-hidden"
     >
       {/* corner brackets — hidden, snap in on hover */}
       {[

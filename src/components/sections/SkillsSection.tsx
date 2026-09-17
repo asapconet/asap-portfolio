@@ -12,7 +12,7 @@ export default function SkillsSection({
   withAiestetics?: boolean;
 }) {
   return (
-    <section className="flex flex-col items-start gap-4 max-w-[1024px] w-full pt-[4rem]">
+    <section className="flex flex-col items-start gap-4 max-w-screen-lg w-full pt-[4rem]">
       <SectionHeader name="skills" />
 
       {withAiestetics ? (
@@ -46,7 +46,7 @@ export default function SkillsSection({
             </div>
           </div>
 
-          <StaggerGrid className="flex-1 columns-1 sm:columns-2 lg:columns-3 gap-4">
+          <StaggerGrid className="flex-1 columns-1 sm:columns-2 md:columns-3 gap-4">
             {skillsData.map((skill, idx) => (
               <RevealItem key={idx} className="break-inside-avoid mb-4">
                 <SkillCard

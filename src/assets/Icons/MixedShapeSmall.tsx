@@ -13,8 +13,8 @@ export const MixedShapeSmall = ({ className }: SvgProps) => {
       >
         <mask id="path-1-inside-1_4_64" fill="white">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M57.5 0H85.75H114V28.25V56.5V84.75H85.75H57.5V56.5H85.75V28.25H57.5V0Z"
           />
         </mask>
@@ -34,8 +34,8 @@ export const MixedShapeSmall = ({ className }: SvgProps) => {
         >
           <rect fill="white" y="27.2501" width="59" height="87" />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M1 28.2501H29.25H57.5V56.5001H29.25V84.7501H57.5V113H29.25H1V84.7501V56.5001V28.2501Z"
           />
         </mask>

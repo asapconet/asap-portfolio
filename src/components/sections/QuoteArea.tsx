@@ -5,7 +5,7 @@ import { QuotationIcon } from "@/assets/Icons/Quotes";
 
 export default function QuoteArea() {
   return (
-    <div className="flex items-center justify-end w-full mt-20 sm:mt-28 md:mt-36">
+    <div className="flex items-center justify-end w-full mt-10 sm:mt-28 md:mt-36 max-w-screen-lg">
       <div className="flex flex-col items-end relative w-full max-w-[712px]">
         <motion.div
           initial={{ opacity: 0, x: 40 }}
@@ -15,14 +15,14 @@ export default function QuoteArea() {
           className="flex text-center items-center w-full border border-white relative min-h-[80px] sm:min-h-[95px] overflow-hidden"
         >
           {/* Top-left quote */}
-          <QuotationIcon className="hidden sm:absolute top-1 sm:top-1.5 sm:left-1 w-2 h-2 sm:w-6 sm:h-6 opacity-75" />
+          <QuotationIcon className="hidden sm:block absolute top-1 sm:top-1.5 sm:left-1 w-2 h-2 sm:w-6 sm:h-6 opacity-75" />
 
           <p className="heading-3 md:heading-2 text-center w-full px-2 py-3">
             With great power comes great electricity bill
           </p>
 
           {/* Bottom-right quote */}
-          <QuotationIcon className="hidden sm:absolute rotate-180 bottom-1 sm:right-1 w-2 h-2 sm:w-6 sm:h-6 opacity-75" />
+          <QuotationIcon className="hidden sm:block absolute rotate-180 bottom-1 sm:right-1 w-2 h-2 sm:w-6 sm:h-6 opacity-75" />
         </motion.div>
 
         <motion.div

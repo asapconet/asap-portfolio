@@ -13,13 +13,13 @@ export const FunCard: React.FC<FProps> = ({ facts: funFacts }) => {
     <motion.div
       whileHover={{ y: -3, rotate: -0.5 }}
       transition={{ type: "spring", stiffness: 260, damping: 18 }}
-      className="w-max border border-sec h-fit"
+      className="w-full max-w-full min-w-0 border border-sec h-fit"
     >
-      <div className="flex flex-wrap gap-x-2 gap-y-1 border-y border-sec p-3 paragraph-1 text-sec">
+      <div className="flex flex-wrap gap-x-2 gap-y-1 border-y border-sec p-3 paragraph-1 text-sec min-w-0">
         {funFacts.map((el, idx) => (
           <span
             key={idx}
-            className="whitespace-normal break-words leading-snug"
+            className="min-w-0 max-w-full whitespace-normal break-words leading-snug"
           >
             <GlitchText text={el} />
           </span>

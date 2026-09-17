@@ -25,18 +25,18 @@ export default function AboutSection() {
       <SectionHeader name="about-me" />
 
       <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-12 w-full">
-        <article className="flex flex-col gap-6 lg:w-[515px] mt-4 text-sec">
+        <article className="flex flex-col gap-3 sm:gap-6 lg:w-[515px] mt-4 text-sec">
           <TypingText typingSpeed={60} cursor={false} className="paragraph-1">
-            Hello I&apos;m Aaron
+            I&apos;m Aaron
           </TypingText>
 
           <div className="paragraph-1-s !leading-7 space-y-6">
             <TypingText typingSpeed={20} startDelay={300}>
-              I&apos;m a frontend-focused software engineer based in Abuja,
-              Nigeria, with 5+ years of experience shipping production web
-              applications in TypeScript, React, and Next.js. I care about clean
-              component architecture, reliable state management, and interfaces
-              that are actually pleasant to use.
+              A frontend-focused software engineer based in Abuja, Nigeria, with
+              5+ years of experience shipping production web applications in
+              TypeScript, React, and Next.js. I care about clean component
+              architecture, reliable state management, and interfaces that are
+              actually pleasant to use.
             </TypingText>
             <br />
             <br />

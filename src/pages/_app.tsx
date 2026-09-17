@@ -13,10 +13,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <SocialLinks className="hidden xl:block" />
       <Navbar />
 
-      <main
-        className="flex-1 flex flex-col items-center justify-center min-h-[90vh]
-        gap-5 mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-lg w-full"
-      >
+      <main className="">
         <Component {...pageProps} />
       </main>
 

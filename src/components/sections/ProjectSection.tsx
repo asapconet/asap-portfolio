@@ -8,7 +8,7 @@ export default function ProjectSection() {
   return (
     <section
       className="flex flex-col md:items-start gap-4
-    max-w-[1024px] w-full pt-[4rem]"
+    max-w-screen-lg w-full pt-[4rem]"
     >
       <DotGrid
         cols={2}
@@ -17,12 +17,12 @@ export default function ProjectSection() {
       />
       <SectionHeader name="projects" link="projects" linkName="View all" />
 
-      <StaggerGrid className="columns-1 md:columns-2 lg:columns-3 gap-6 mb-32">
+      <StaggerGrid className="columns-1 md:columns-2 lg:columns-3 gap-6 w-full">
         {projectData
           .slice(0, 4)
           .filter((el) => el.status === "completed")
           .map((el, idx) => (
-            <RevealItem key={idx} className="break-inside-avoid mb-6">
+            <RevealItem key={idx} className="break-inside-avoid mb-6 w-full">
               <ProjectCard
                 imagePrev={el.imagePrev}
                 lang={el.lang}

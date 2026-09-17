@@ -8,7 +8,7 @@ export default function MainPage() {
   return (
     <div
       className="flex flex-col items-center justify-center min-h-[90vh]
-    gap-5 mx-auto px-4 sm:px-6 lg:px-8"
+    gap-5 mx-auto sm:px-4 lg:px-6"
     >
       <MainHero />
       {/*Quotes*/}
