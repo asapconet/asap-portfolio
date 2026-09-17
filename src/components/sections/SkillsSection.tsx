@@ -3,6 +3,8 @@ import { SkillCard } from "@/components/SkillCard";
 import { DotGrid } from "@/components/DotGrids";
 import { MixedShapeSmall } from "@/assets/Icons/MixedShapeSmall";
 import { skillsData } from "@/static/data/skills";
+import { RevealItem, StaggerGrid } from "../animations/RevealOnScroll";
+import { SP } from "next/dist/shared/lib/utils";
 
 export default function SkillsSection({
   withAiestetics = true,
@@ -44,28 +46,28 @@ export default function SkillsSection({
             </div>
           </div>
 
-          <div className="flex-1 columns-1 sm:columns-2 lg:columns-3 gap-4">
+          <StaggerGrid className="flex-1 columns-1 sm:columns-2 lg:columns-3 gap-4">
             {skillsData.map((skill, idx) => (
-              <div key={idx} className="break-inside-avoid mb-4">
+              <RevealItem key={idx} className="break-inside-avoid mb-4">
                 <SkillCard
                   skillType={skill.skillType}
                   skillSets={skill.skillSets}
                 />
-              </div>
+              </RevealItem>
             ))}
-          </div>
+          </StaggerGrid>
         </div>
       ) : (
-        <div className="columns-1 sm:columns-2 md:columns-4 lg:columns-5 gap-4">
+        <StaggerGrid className="columns-1 sm:columns-2 md:columns-4 lg:columns-5 gap-4">
           {skillsData.map((skill, idx) => (
-            <div key={idx} className="break-inside-avoid mb-4">
+            <RevealItem key={idx} className="break-inside-avoid mb-4">
               <SkillCard
                 skillType={skill.skillType}
                 skillSets={skill.skillSets}
               />
-            </div>
+            </RevealItem>
           ))}
-        </div>
+        </StaggerGrid>
       )}
     </section>
   );

@@ -3,6 +3,7 @@ import { DotGrid } from "@/components/DotGrids";
 import { MixedShapeSmall } from "@/assets/Icons/MixedShapeSmall";
 import { FunCard } from "../FunCard";
 import { funFacts } from "@/static/data/funFacts";
+import { StaggerGrid, RevealItem } from "../animations/RevealOnScroll";
 
 export default function FunFacts() {
   return (
@@ -10,11 +11,16 @@ export default function FunFacts() {
       <SectionHeader name="fun-facts" />
 
       <div className="flex flex-col lg:flex-row gap-2 w-full mt-4 sm:mt-12 mb-32">
-        <div className="flex-1 flex flex-wrap gap-2 w-full">
+        <StaggerGrid
+          className="flex-1 flex flex-wrap gap-2 w-full"
+          stagger={0.06}
+        >
           {funFacts.map((fax, idx) => (
-            <FunCard key={idx} facts={[fax]} />
+            <RevealItem key={idx}>
+              <FunCard facts={[fax]} />
+            </RevealItem>
           ))}
-        </div>
+        </StaggerGrid>
         <div className="hidden lg:flex justify-between gap-4 pr-4 w-[30%] min-h-[285px]">
           <div className="flex flex-col items-center justify-center gap-8">
             <DotGrid

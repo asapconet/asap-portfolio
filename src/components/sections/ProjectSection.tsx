@@ -2,6 +2,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { DotGrid } from "@/components/DotGrids";
 import { ProjectCard } from "../ProjectCard";
 import { projectData } from "@/static/data/projectData";
+import { RevealItem, StaggerGrid } from "../animations/RevealOnScroll";
 
 export default function ProjectSection() {
   return (
@@ -15,12 +16,13 @@ export default function ProjectSection() {
         dotClassName="bg-white/90"
       />
       <SectionHeader name="projects" link="projects" linkName="View all" />
-      <div className="columns-1 md:columns-2 lg:columns-3 gap-6 mb-32">
+
+      <StaggerGrid className="columns-1 md:columns-2 lg:columns-3 gap-6 mb-32">
         {projectData
           .slice(0, 4)
           .filter((el) => el.status === "completed")
           .map((el, idx) => (
-            <div key={idx} className="break-inside-avoid mb-6">
+            <RevealItem key={idx} className="break-inside-avoid mb-6">
               <ProjectCard
                 imagePrev={el.imagePrev}
                 lang={el.lang}
@@ -31,16 +33,16 @@ export default function ProjectSection() {
                 projectLink1={el.projectLink1}
                 linkName1={el.linkName1}
               />
-            </div>
+            </RevealItem>
           ))}
-        <div
-          className="
-            absolute -right-6 mt-28
-            hidden xl:block
-            w-12 md:w-[80px] h-24 md:h-[155px] border border-white border-r-0
-          "
-        />
-      </div>
+      </StaggerGrid>
+      <div
+        className="
+          absolute -right-6 mt-28
+          hidden xl:block
+          w-12 md:w-[80px] h-24 md:h-[155px] border border-white border-r-0
+        "
+      />
     </section>
   );
 }
