@@ -44,34 +44,26 @@ export default function SkillsSection({
             </div>
           </div>
 
-          <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-4">
-            {skillsData.slice(0, 3).map((skill, idx) => (
-              <SkillCard
-                key={idx}
-                skillType={skill.skillType}
-                skillSets={skill.skillSets}
-              />
-            ))}
-
-            <div className="hidden lg:block" />
-
-            {skillsData.slice(3).map((skill, idx) => (
-              <SkillCard
-                key={idx + 3}
-                skillType={skill.skillType}
-                skillSets={skill.skillSets}
-              />
+          <div className="flex-1 columns-1 sm:columns-2 lg:columns-3 gap-4">
+            {skillsData.map((skill, idx) => (
+              <div key={idx} className="break-inside-avoid mb-4">
+                <SkillCard
+                  skillType={skill.skillType}
+                  skillSets={skill.skillSets}
+                />
+              </div>
             ))}
           </div>
         </div>
       ) : (
-        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <div className="columns-1 sm:columns-2 md:columns-4 lg:columns-5 gap-4">
           {skillsData.map((skill, idx) => (
-            <SkillCard
-              key={idx}
-              skillType={skill.skillType}
-              skillSets={skill.skillSets}
-            />
+            <div key={idx} className="break-inside-avoid mb-4">
+              <SkillCard
+                skillType={skill.skillType}
+                skillSets={skill.skillSets}
+              />
+            </div>
           ))}
         </div>
       )}

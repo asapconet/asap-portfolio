@@ -36,20 +36,24 @@ export default function Projects() {
       w-full sm:pt-[2rem]"
       >
         <SectionHeader name="complete projects" />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-32 mt-4">
-          {projectData.slice(0, 5).map((el, idx) => (
-            <ProjectCard
-              key={idx}
-              imagePrev={el.imagePrev}
-              lang={el.lang}
-              projectName={el.projectName}
-              desc={el.desc}
-              projectLink={el.projectLink}
-              linkName={el.linkName}
-              projectLink1={el.projectLink1}
-              linkName1={el.linkName1}
-            />
-          ))}
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 mb-32 mt-4">
+          {projectData
+            .slice(0, 5)
+            .filter((el) => el.status === "completed")
+            .map((el, idx) => (
+              <div key={idx} className="break-inside-avoid mb-4">
+                <ProjectCard
+                  imagePrev={el.imagePrev}
+                  lang={el.lang}
+                  projectName={el.projectName}
+                  desc={el.desc}
+                  projectLink={el.projectLink}
+                  linkName={el.linkName}
+                  projectLink1={el.projectLink1}
+                  linkName1={el.linkName1}
+                />
+              </div>
+            ))}
         </div>
       </section>
       <section
@@ -57,18 +61,21 @@ export default function Projects() {
       w-full pt-[2rem]"
       >
         <SectionHeader name="ongoing projects" />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 mb-32 mt-4">
-          {projectData.map((el, idx) => (
-            <ProjectCard
-              key={idx}
-              lang={el.lang}
-              projectName={el.projectName}
-              desc={el.desc}
-              projectLink={el.projectLink}
-              projectLink1={el.projectLink1}
-              linkName1={el.linkName1}
-            />
-          ))}
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 sm:gap-8 mb-32 mt-4">
+          {projectData
+            .filter((el) => el.status === "ongoing")
+            .map((el, idx) => (
+              <div key={idx} className="break-inside-avoid mb-4 sm:mb-8">
+                <ProjectCard
+                  lang={el.lang}
+                  projectName={el.projectName}
+                  desc={el.desc}
+                  projectLink={el.projectLink}
+                  projectLink1={el.projectLink1}
+                  linkName1={el.linkName1}
+                />
+              </div>
+            ))}
         </div>
         <div
           className="

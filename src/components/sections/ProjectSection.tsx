@@ -14,21 +14,25 @@ export default function ProjectSection() {
         className="absolute -left-2 mt-12 hidden xl:grid"
         dotClassName="bg-white/90"
       />
-      <SectionHeader name="project" link="projects" linkName="View all" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-32">
-        {projectData.slice(0, 3).map((el, idx) => (
-          <ProjectCard
-            key={idx}
-            // imagePrev={el.imagePrev}
-            lang={el.lang}
-            projectName={el.projectName}
-            desc={el.desc}
-            projectLink={el.projectLink}
-            linkName={el.linkName}
-            projectLink1={el.projectLink1}
-            linkName1={el.linkName1}
-          />
-        ))}
+      <SectionHeader name="projects" link="projects" linkName="View all" />
+      <div className="columns-1 md:columns-2 lg:columns-3 gap-6 mb-32">
+        {projectData
+          .slice(0, 4)
+          .filter((el) => el.status === "completed")
+          .map((el, idx) => (
+            <div key={idx} className="break-inside-avoid mb-6">
+              <ProjectCard
+                imagePrev={el.imagePrev}
+                lang={el.lang}
+                projectName={el.projectName}
+                desc={el.desc}
+                projectLink={el.projectLink}
+                linkName={el.linkName}
+                projectLink1={el.projectLink1}
+                linkName1={el.linkName1}
+              />
+            </div>
+          ))}
         <div
           className="
             absolute -right-6 mt-28

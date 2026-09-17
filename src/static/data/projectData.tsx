@@ -2,6 +2,7 @@ import { PProps } from "@/components/ProjectCard";
 
 export const projectData: PProps[] = [
   {
+    status: "ongoing",
     imagePrev: "/images/projects/check-et.png",
     lang: ["TypeScript", "React Native", "Rust", "Axum", "PostgreSQL"],
     projectName: "Check-et",
@@ -12,6 +13,7 @@ export const projectData: PProps[] = [
     linkName1: "GitHub",
   },
   {
+    status: "completed",
     imagePrev: "/images/projects/clear-comments.png",
     lang: ["TypeScript", "Node.js"],
     projectName: "clear-comments",
@@ -22,7 +24,8 @@ export const projectData: PProps[] = [
     linkName1: "GitHub",
   },
   {
-    imagePrev: "/images/projects/investnaija.png",
+    status: "completed",
+    imagePrev: "/images/projects/invest-naija.png",
     lang: ["React", "Next.js", "WordPress", "PHP"],
     projectName: "InvestNaija",
     desc: "Financial investment platform helping users plan, save, and retire — partly built with WordPress.",
@@ -32,6 +35,18 @@ export const projectData: PProps[] = [
     linkName1: undefined,
   },
   {
+    status: "completed",
+    imagePrev: "/images/projects/groundible.png",
+    lang: ["TypeScript", "Next.js", "React", "Recoil"],
+    projectName: "Groundible",
+    desc: "An offline-first data platform that uses field agents to capture real-time retail audits, counterfeit tracking, and civic insights across Nigeria.",
+    projectLink: "https://www.groundible.com/",
+    linkName: "Live",
+    projectLink1: undefined,
+    linkName1: undefined,
+  },
+  {
+    status: "completed",
     imagePrev: "/images/projects/bitcoin-regtest.png",
     lang: ["Rust", "Bitcoin Core", "JSON-RPC"],
     projectName: "Bitcoin Core Regtest Application",
@@ -42,16 +57,7 @@ export const projectData: PProps[] = [
     linkName1: "GitHub",
   },
   {
-    imagePrev: "/images/projects/groundible-lagos.png",
-    lang: ["TypeScript", "Next.js", "React", "Recoil"],
-    projectName: "Groundible Lagos",
-    desc: "Delivered in under one week at Enterscale, supporting approximately 3,500 signups.",
-    projectLink: undefined,
-    linkName: "Live",
-    projectLink1: undefined,
-    linkName1: undefined,
-  },
-  {
+    status: "completed",
     imagePrev: "/images/projects/pillar.png",
     lang: ["TypeScript", "React", "Recoil", "Material UI"],
     projectName: "Pillar",

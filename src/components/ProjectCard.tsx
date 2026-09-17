@@ -12,6 +12,7 @@ export interface PProps {
   linkName?: string;
   projectLink1?: string | undefined;
   linkName1?: string | undefined;
+  status?: "ongoing" | "completed";
 }
 
 export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {
