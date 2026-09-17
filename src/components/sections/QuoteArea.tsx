@@ -15,14 +15,14 @@ export default function QuoteArea() {
           className="flex text-center items-center w-full border border-white relative min-h-[80px] sm:min-h-[95px] overflow-hidden"
         >
           {/* Top-left quote */}
-          <QuotationIcon className="absolute top-1 sm:top-1.5 sm:left-1 w-2 h-2 sm:w-6 sm:h-6 opacity-75" />
+          <QuotationIcon className="hidden sm:absolute top-1 sm:top-1.5 sm:left-1 w-2 h-2 sm:w-6 sm:h-6 opacity-75" />
 
           <p className="heading-3 md:heading-2 text-center w-full px-2 py-3">
             With great power comes great electricity bill
           </p>
 
           {/* Bottom-right quote */}
-          <QuotationIcon className="absolute rotate-180 bottom-1 sm:right-1 w-2 h-2 sm:w-6 sm:h-6 opacity-75" />
+          <QuotationIcon className="hidden sm:absolute rotate-180 bottom-1 sm:right-1 w-2 h-2 sm:w-6 sm:h-6 opacity-75" />
         </motion.div>
 
         <motion.div
