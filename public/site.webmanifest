@@ -1,0 +1,17 @@
+{
+  "name": "Aaron Sunday — ASAPCONET",
+  "short_name": "ASAPCONET",
+  "description": "Portfolio of Aaron Sunday, software engineer and technical writer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#00D163",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

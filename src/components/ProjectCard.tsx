@@ -42,7 +42,7 @@ export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {
       ))}
 
       {/* scanline sweep */}
-      <span className="pointer-events-none absolute inset-x-0 top-0 h-8 bg-gradient-to-b from-white/10 to-transparent -translate-y-full group-hover:translate-y-[1200%] transition-transform duration-[1100ms] ease-linear" />
+      <span className="pointer-events-none absolute inset-x-0 top-0 h-8 bg-gradient-to-b from-white/10 to-transparent -translate-y-full group-hover:translate-y-[1800%] transition-transform duration-[1100ms] ease-linear" />
 
       {rest.imagePrev && (
         <div className="w-full aspect-[331/201] relative overflow-hidden">
@@ -70,9 +70,9 @@ export const ProjectCard: React.FC<PProps> = ({ lang, ...rest }) => {
       </div>
 
       <div className="p-4 sm:p-6">
-        <h2 className="heading-2 text-lg sm:text-xl md:text-2xl">
+        <h1 className="heading-2 text-lg sm:text-xl md:text-2xl">
           <GlitchText text={rest.projectName} />
-        </h2>
+        </h1>
         <p className="paragraph-1 text-sec py-3 sm:py-4 text-sm sm:text-base">
           {rest.desc}
         </p>

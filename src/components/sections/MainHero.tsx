@@ -5,7 +5,7 @@ import { createTimeline } from "animejs";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { DotsIcon1 } from "@/assets/Icons/Dots";
 import { MixedShapeLogo1 } from "@/assets/Icons/MixedShapeLogo";
-import myCover from "@/assets/myCover.png";
+import myCover from "@/assets/coverImage.png";
 import Image from "next/image";
 import ApButton from "../Button";
 import TypingText from "../animations/Typing";
@@ -92,10 +92,10 @@ export default function MainHero() {
         transition={{ duration: 0.4 }}
         className="flex w-full min-w-0 max-w-[520px] flex-col gap-6 sm:pt-10"
       >
-        <p className="heading-1-sm">
+        <h1 className="heading-1-sm">
           Aaron is a <span className="text-pri">Software Engineer</span> and a{" "}
           <span className="text-pri">Technical Writer</span>
-        </p>
+        </h1>
 
         <p className="paragraph-1s text-sec">
           He builds production software and is expanding across the stack, from

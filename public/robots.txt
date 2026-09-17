@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asap.dev/sitemap.xml
