@@ -3,7 +3,7 @@ const baseConfig = {
   title: "Aaron Sunday [ASAPCONET] — Software Engineer & Technical Writer",
   description:
     "Aaron Sunday, is a software engineer and technical writer building production software, backend APIs, and Bitcoin projects with Rust.",
-  url: "https://asap.dev",
+  url: "https://asap-portfolio-alpha.vercel.app",
 };
 
 const siteConfig = {

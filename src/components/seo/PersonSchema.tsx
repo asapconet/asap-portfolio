@@ -2,22 +2,22 @@ export default function PersonSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "@id": "https://asap.dev/#profile",
+    "@id": "https://asap-portfolio-alpha.vercel.app/#profile",
 
     mainEntity: {
       "@type": "Person",
-      "@id": "https://asap.dev/#aaron-sunday",
+      "@id": "https://asap-portfolio-alpha.vercel.app/#aaron-sunday",
 
       name: "Aaron Sunday",
 
       alternateName: "ASAPCONET",
 
-      url: "https://asap.dev",
+      url: "https://asap-portfolio-alpha.vercel.app",
 
       description:
         "Aaron Sunday, also known as ASAPCONET, is a software engineer and technical writer.",
 
-      image: "https://asap.dev/about-image.jpg",
+      image: "https://asap-portfolio-alpha.vercel.app/about-image.jpg",
 
       jobTitle: "Software Engineer",
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://asap.dev/sitemap.xml
+Sitemap: https://asap-portfolio-alpha.vercel.app/sitemap.xml

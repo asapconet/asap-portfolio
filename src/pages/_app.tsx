@@ -23,7 +23,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-        <link rel="canonical" href="https://asap.dev/" />
+        <link rel="canonical" href="https://asap-portfolio-alpha.vercel.app/" />
 
         <meta name="robots" content="index, follow" />
 
@@ -40,13 +40,19 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           content="Portfolio of Aaron Sunday [ASAPCONET], a software engineer and technical writer building production software, backend APIs, and Bitcoin projects with Rust."
         />
 
-        <meta property="og:url" content="https://asap.dev/" />
+        <meta
+          property="og:url"
+          content="https://asap-portfolio-alpha.vercel.app/"
+        />
 
         <meta property="og:type" content="website" />
 
         <meta property="og:site_name" content="Aaron Sunday — ASAPCONET" />
 
-        <meta property="og:image" content="https://asap.dev/og-image.png" />
+        <meta
+          property="og:image"
+          content="https://asap-portfolio-alpha.vercel.app/og-image.png"
+        />
 
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -69,7 +75,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           content="Portfolio of Aaron Sunday [ASAPCONET], software engineer and technical writer."
         />
 
-        <meta name="twitter:image" content="https://asap.dev/og-image.png" />
+        <meta
+          name="twitter:image"
+          content="https://asap-portfolio-alpha.vercel.app/og-image.png"
+        />
 
         <meta name="twitter:site" content="@asapconet" />
 
