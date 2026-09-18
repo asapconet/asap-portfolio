@@ -81,7 +81,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <CustomCursor />
         <SocialLinks className="hidden xl:block" />
         <Navbar />
-        <main>
+        <main className="w-full min-w-0">
           <Component {...pageProps} />
         </main>
 

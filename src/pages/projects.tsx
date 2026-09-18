@@ -5,8 +5,11 @@ import { ProjectCard } from "@/components/ProjectCard";
 
 export default function Projects() {
   return (
-    <>
-      <div className="h-[150px] sm:h-[200px] w-full">
+    <section
+      className="flex flex-col items-center justify-center min-h-[90vh]
+  gap-5 mx-auto sm:px-4 lg:px-8 max-w-screen-lg"
+    >
+      <div className="h-[150px] sm:h-[200px] w-full mt-24">
         <DotGrid
           cols={3}
           rows={4}
@@ -16,7 +19,7 @@ export default function Projects() {
           className="absolute left-0 mt-96 hidden xl:grid"
           dotClassName="bg-white/90"
         />
-        <div className="">
+        <div>
           <div className="flex items-center heading-2 sm:heading-1-sm">
             <span className="text-pri">/</span>
             <h2 className="">projects</h2>
@@ -31,11 +34,8 @@ export default function Projects() {
           "
         />
       </div>
-      <section
-        className="flex flex-col md:items-start gap-8
-      w-full sm:pt-[2rem]"
-      >
-        <SectionHeader name="complete projects" />
+      <section className="flex flex-col gap-4 w-full pb-2">
+        <SectionHeader name="completed projects" />
         <div className="columns-1 md:columns-2 lg:columns-3 gap-4 mb-32 mt-4">
           {projectData
             .slice(0, 5)
@@ -98,10 +98,10 @@ export default function Projects() {
           width={120}
           height={120}
           gap={-1}
-          className="absolute -left-6 mt-[600px] hidden xl:grid"
+          className="absolute -left-6 mt-[400px] hidden xl:grid"
           dotClassName="bg-white/90"
         />
       </section>
-    </>
+    </section>
   );
 }

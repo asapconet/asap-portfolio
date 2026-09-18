@@ -34,7 +34,7 @@ export default function FunFacts() {
               dotClassName="bg-white/90"
             />
 
-            <MixedShapeSmall className="mx-44" />
+            <MixedShapeSmall className="ml-44" />
           </div>
         </div>
       </div>

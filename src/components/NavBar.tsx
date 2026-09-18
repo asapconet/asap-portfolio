@@ -1,10 +1,11 @@
 import { HeaderLogo } from "@/assets/Icons/HeaderLogo";
 import { navLinks } from "@/static/data/navLinks";
 import ApLink from "./LInk";
+import MobileNav from "./MobileNav";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-center">
+    <nav className="flex items-center justify-center relative z-50">
       <div className="max-w-[1024px] w-full">
         <div className="flex">
           <div className="flex items-center justify-between w-full min-h-20">
@@ -21,6 +22,7 @@ export default function Navbar() {
                 ))}
               </li>
             </ul>
+            <MobileNav />
           </div>
         </div>
       </div>

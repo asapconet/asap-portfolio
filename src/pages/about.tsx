@@ -6,8 +6,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <>
-      {" "}
+    <section
+      className="flex flex-col items-center justify-center min-h-[90vh]
+gap-5 mx-auto sm:px-4 lg:px-8 max-w-screen-lg w-full mt-24"
+    >
       <div className="h-[150px] sm:h-[200px] w-full">
         <DotGrid
           cols={3}
@@ -89,7 +91,7 @@ const About = () => {
       </section>
       <SkillsSection withAiestetics={false} />
       <FunFacts />
-    </>
+    </section>
   );
 };
 

@@ -1,6 +1,5 @@
 import { DotGrid } from "@/components/DotGrids";
 import ApLink from "@/components/LInk";
-import { SectionHeader } from "@/components/SectionHeader";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import { MdMail } from "react-icons/md";
@@ -8,8 +7,10 @@ import { RiTwitterXLine } from "react-icons/ri";
 
 const Contact = () => {
   return (
-    <>
-      {" "}
+    <section
+      className="flex flex-col items-center justify-self-center min-h-[90vh]
+gap-5 mx-auto sm:px-4 lg:px-8 max-w-screen-lg mt-24 w-full"
+    >
       <div className="h-[150px] sm:h-[200px] w-full">
         <DotGrid
           cols={3}
@@ -35,7 +36,7 @@ const Contact = () => {
         "
         />
       </div>
-      <section className="flex flex-col gap-4 max-w-[1024px] w-full pb-16">
+      <section className="flex flex-col gap-4 w-full pb-16">
         <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-8 lg:gap-12 w-full">
           <div className="flex flex-col gap-4 md:w-[50%] lg:w-[515px] text-sec">
             <p className="paragraph-1-s !leading-7">
@@ -99,7 +100,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </>
+    </section>
   );
 };
 
